@@ -22,11 +22,11 @@ export default function Skill()
                     <p className="text-justify">I am a fresh graduate from SMKN 2 Pandeglang who is looking for a job. I know how to build a website using a framework like React NextJS, using an API to communicate with the back end. Also Ive used Laravel but I didnt continue because Laravel projects are difficult to upload to the internet, difficult because of paid hosting. After graduating from high school, I got 2 certificates, a certificate of competency expertise and a certificate of English language TOEIC.</p>
                     <p className="my-8">Below are some of my abilities, although Im not too expert but I understand how to use this:</p>
                     <div className="py-3">    
-                    <Marquee direction="right" speed={150}>
+                    <Marquee direction="right" speed={100}>
                         {skills.map((show, index)=>{
                         return(
-                            <div key={index}>
-                            <img src={show.image} alt="skill" className="h-10 md:h-14 px-5 py-2"/>
+                            <div key={index} className="px-3">
+                            <img src={show.image} alt="skill" className="h-7 md:h-10"/>
                             </div>
                         )
                         })}
