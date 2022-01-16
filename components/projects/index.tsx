@@ -24,12 +24,12 @@ export default function Project()
             <div className="is-project">
                 <h3 className="text-2xl text-center text-white font-bold pt-5">Projects</h3>
                 <div className="container mx-auto">
-                        {data.map((show)=>{
+                        {data.map((show, index)=>{
                             return(
-                                <div className="flex flex-col md:flex-row w-full mb-3">
+                                <div key={index} className="flex flex-col md:flex-row w-full mb-3">
                                     <div className="flex w-full px-2 md:flex-col md:w-2/4 py-4">
                                         <div className="w-full">
-                                            <img src={show.image} alt="" className="my-project rounded shadow-2xl" width={600} height={450}/>
+                                            <img src={show.image} alt="project" className="my-project rounded shadow-2xl" width={600} height={450}/>
                                         </div>
                                     </div>
                                     <div className="flex flex-col pb-2 justify-center items-center md:w-2/4 md:py-4 px-6">
