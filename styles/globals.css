@@ -1,9 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:'Lexend Deca', sans-serif;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  -webkit-scrollbar: none;
+}
+.my-project{
+  image-rendering: -webkit-optimize-contrast;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+img{
+  image-rendering: -webkit-optimize-contrast;
 }
 
 a {
@@ -13,4 +31,48 @@ a {
 
 * {
   box-sizing: border-box;
+  image-rendering: -webkit-optimize-contrast;
+}
+.wrapper-hero{
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+  font-family: 'Lexend Deca', sans-serif;
+}
+.emoji {
+  font-size: 1.5em;
+  animation: waving-hand 2.5s infinite;
+  transform-origin: 70% 70%;
+  display:inline-block;
+}
+@keyframes waving-hand{
+  0%{
+    transform: rotate(0deg);
+  }
+  10%{
+    transform: rotate(14deg);
+  }
+  20%{
+    transform: rotate(-8deg);
+  }
+  30%{
+    transform: rotate(14deg);
+  }
+  40%{
+    transform: rotate(-4deg);
+  }
+  50%{
+    transform: rotate(10deg);
+  }
+  60%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: 0deg;
+  }
+}
+.is-project{
+  background-image: url('/assets/bged.jpg');
+  background-repeat: no-repeat;
 }
