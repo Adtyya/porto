@@ -9,7 +9,7 @@ export default function Hero()
             <div>
                 <p className="text-lg md:text-xl">
                     <span className="emoji px-2">👋</span>
-                    Hello there, iam Aditya Fitriansyah
+                    Hello there, i am Aditya Fitriansyah
                 </p>
             </div>
         </div>
@@ -17,7 +17,7 @@ export default function Hero()
             <p className="text-md">My Projects</p>
         </div>
         <div className="flex justify-center h-[5vh] items-center">
-            <a href="#project" className="text-2xl hover:text-5xl">
+            <a href="#project" className="text-2xl">
                 <FontAwesomeIcon icon={faAngleDown} />
             </a>
         </div>

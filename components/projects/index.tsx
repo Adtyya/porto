@@ -45,7 +45,7 @@ export default function Project()
                     <p>About Me</p>
                 </div>
                 <div className="flex justify-center h-[5vh] items-center text-white">
-                    <a href="#skills" className="text-2xl hover:text-5xl">
+                    <a href="#skills" className="text-2xl">
                      <FontAwesomeIcon icon={faAngleDown} />
                     </a>
                </div>
