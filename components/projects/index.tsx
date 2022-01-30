@@ -17,7 +17,13 @@ export default function Project()
         "image": "/assets/slice.png",
         "title": <a href="https://next1.netlify.app/">Slice Design</a>,
         "body": "Nothing special. Just convert design into code"
-    }]
+    },
+    {
+        "image": "/assets/quranapp.png",
+        "title": <a href="https://quran-apps.netlify.app/">Simple Quran App</a>,
+        "body": "Website based Quran application. The data is taken from the API of the Indonesian Ministry of Religion, through the equran id website."
+    },
+    ]
 
     return(
         <>
